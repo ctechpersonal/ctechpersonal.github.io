@@ -1,0 +1,283 @@
+   /*font-family: serif;*/
+   /*font-family: times new roman;*/
+   /*font-family: "Times New Roman";*/
+   /*font-family: times;*/
+   /*font-family: palatino;*/
+   /*font-family: ITC garamond;*/
+   /*font-family: garamond;*/
+   /*font-family: georgia;*/
+
+
+
+   /*font-family: "Segoe UI";*/
+   /*font-family: monospace;*/
+   /*font-family: roboto;*/
+   /*font-family: sans-serif;*/
+   /*font-family: Arial;*/
+   /*font-family: Helvetica;*/
+   /*font-family: "Helvetica Neue";*/
+   /*font-family: "Open Sans";*/
+   /*color: #888;*/
+   /*font-weight: 300;*/
+   /*line-height: 22px;*/
+
+
+
+/*========= VARIABLES =========
+
+hsl(117, 77%, 22%) -- #11640D
+
+hsl(219, 30%, 25%)
+hsl(219, 100%, 50%)
+#2E3C56
+
+*/
+
+
+
+
+
+#aside {
+   /*box-shadow: 5px 0 15px hsl(0, 0%, 50%);*/
+}
+
+
+
+
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+
+body {
+   color: hsl(0, 0%, 0%);
+   /*font: normal 16px/130% georgia, times new roman, serif;*/
+   font: 400 13.5px/1.2 'Courier Prime', monospace;
+
+   /*font-stretch: ultra-expanded;*/
+
+}
+
+
+
+main p, main h1, main h2, main h3, main h4, main h5, main h6
+section p, section h1, section h2, section h3, section h4, section h5, section h6
+aside p, aside h1, aside h2, aside h3, aside h4, aside h5, aside h6
+header p, header h1, header h2, header h3, header h4, header h5, header h6
+footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+   white-space: break-spaces;
+   /*white-space: pre-wrap;*/
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+   /*color: #648880;*/
+   color: #728472;
+
+   letter-spacing: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+   margin-bottom: 15px;
+
+   /*text-align: justify-all;*/
+   /*text-align: justify;*/
+   text-align: left;
+}
+
+h1 {
+   font-weight: bold;
+   font-size: 20px;
+
+   margin-bottom: 30px;
+}
+
+h1 + p::first-letter,
+h2 + p::first-letter {
+
+   /*font-size: 1.3em;*/
+   font-weight: bold;
+   /*font:  1.2em georgia;*/
+   font-size: 1.5em;
+   color: hsl(32, 100%, 50%);
+}
+h1 + p,
+h2 + p {
+   margin-top: -0.5em;
+}
+
+ul {
+   margin-left: 40px;
+}
+
+ul li {
+   list-style: '-\ ' outside;
+}
+
+
+
+.footer {
+   font-size: 11px;
+   line-height: 100%;
+   color: hsl(0, 0%, 0%);
+}
+
+
+
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+
+a:visited {
+   /*color: hsl(0, 0%, 50%);*/
+   /*color: #11640D;*/
+   color: hsl(219, 80%, 60%);
+
+   text-decoration: none;
+}
+
+a:link {
+   line-height: 120%;
+
+   color: hsl(246, 100%, 50%);
+
+   text-decoration: none;
+   /*text-decoration: underline;*/
+}
+
+a:hover {
+   color: hsl(32, 100%, 50%);
+}
+
+
+
+
+
+
+/*
+  ========================================
+  Navigation Links
+  ========================================
+*/
+
+nav > a:visited {
+   /*color: hsl(0, 0%, 97%);*/
+   /*color: hsl(219, 80%, 60%);*/
+   color: hsl(117, 77%, 22%);
+}
+
+
+
+
+.nav > a:link {
+   display: block;
+
+   font-size: 18px;
+   font-family: georgia;
+
+   /*color: hsl(0, 0%, 3%);*/
+   /*color: hsl(0, 0%, 3%, 0.2);*/
+
+   /*color: hsl(219, 80%, 95%);*/
+   /*color: hsl(246, 100%, 50%);*/
+
+   /*color: hsl(0, 0%, 97%);*/
+   /*color: hsl(219, 80%, 60%);*/
+   color: hsl(117, 77%, 22%);
+   /*text-shadow: hsl(219, 80%, 60%) 0 0 5px;*/
+
+   text-transform:uppercase;
+
+   text-decoration: none;
+   /*white-space: nowrap;*/
+}
+
+
+.nav > a:hover {
+}
+
+
+@media (min-width: 769px) {
+
+   /*.nav, .nav > a:link {*/
+   .nav {
+      /*width: min-content;*/
+      /*display: inline-block;*/
+   }
+
+
+   .nav.margin-top {
+      margin-top: 21.6px
+   }
+
+   /*.nav:has(> a:hover) {*/
+   .nav:hover {
+      margin-top: -2px;
+   }
+
+   /*.nav.margin-top:has(> a:hover) {*/
+   .nav.margin-top:hover {
+      margin-top: calc(21.6px - 2px);
+   }
+
+   /* --  temp -- */
+/*   .nav > a.home-page:hover,
+   .nav > a.home-page.d-hidden + a:hover {
+      margin-top: -1%;
+      padding-top: 0;
+   }*/
+   /* -- /temp -- */
+
+   .nav > a:hover {
+
+
+      padding-top: 2px;
+      padding-bottom: 2px;
+
+      font-size: 20px;
+      margin-left: -2px;
+
+      text-shadow: hsl(51, 100%, 50%, 0.5) 0 0 15px;
+
+      color: hsl(32, 100%, 50%);
+
+      /*text-shadow: hsl(219, 80%, 60%) 0 0 10px;*/
+      /*text-transform:uppercase;*/
+      /*text-decoration: underline;*/
+   }
+}
+
+/*   nav > a.home-page:hover {
+      text-shadow: hsl(300, 100%, 50%, 0.75) 0 0 15px;
+   }
+
+   nav > a[href*='blog']:hover {
+      text-shadow: hsl(100, 100%, 50%, 0.75) 0 0 15px;
+   }
+
+   nav > a[href*='resources']:hover {
+      text-shadow: hsl(178, 100%, 50%, 0.75) 0 0 15px;
+   }
+
+   nav > a[href*='contacts']:hover {
+      text-shadow: hsl(51, 100%, 50%, 0.75) 0 0 15px;
+   }*/
+
+/*hsl(0, 100%, 50%)*/
+/*hsl(51, 100%, 50%) -- gold*/
+
+
+
+
+
+abbr[title], acronym[title] {
+   text-decoration: underline dotted;
+}

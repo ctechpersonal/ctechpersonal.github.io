@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset='UTF-8'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+   <title>Nazar Pryjmak</title>
+   <meta name='description' content='description'>
+
+   <link rel='stylesheet' href='/assets/stylesheets/reset.css'>
+   <link rel='stylesheet' href='/assets/stylesheets/gridBase.css'>
+   <link rel='stylesheet' href='/assets/stylesheets/typography.css'>
+
+
+   <link rel='stylesheet' href='/assets/stylesheets/mobileGrid.css' media="(max-width: 768px)">
+   <link rel='stylesheet' href='/assets/stylesheets/desktopGrid.css' media="(min-width: 769px)">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<style>
+   
+.container {
+   /*padding: 0 10px 5px 0;*/
+}
+
+
+</style>
+<noscript>
+   <style>
+      .burger-box { display: none; }
+
+      .primary-nav-box {
+         position: static;
+         height: 100%;
+
+         padding: 15px 0 15px 0;
+      }
+
+      .nav {
+         margin-top: 0;
+      }
+   </style>
+</noscript>
+
+
+</head>
+
+<body id='top'>
+
+<div class="upper-roll-top"></div>
+<div class="upper-roll-bottom"></div>
+
+<div class="lower-roll-top"></div>
+<div class="lower-roll-bottom"></div>
+
+<aside id='aside'>
+   <a href='index.html'>
+      <img  class='mood'
+            src=''
+            alt="">
+   </a>
+
+   <div class="group burger-box d-hidden">
+      <img  class="autor"
+            src="" alt="">
+      <button class="burger" aria-label="Tooggle Main Visual Navigation"></button>
+   </div>
+
+
+   <noscript>
+      <div class="primary-nav-box">
+         <nav class="nav margin-top">
+            <a href='index.html'>Home</a><br>
+            <a href='articles.html'>Articles</a><br>
+            <a href='about.html'>About N.Pryjmak</a><br>
+            <a href='contact.html'>Contact</a><br>
+         </nav>
+      </div>
+   </noscript>
+   <div class="primary-nav-box m-hidden">
+      <nav class="nav">
+         <a class="home-page" href='/'>Home</a>
+         <a href="BlogsFeed.html">Blog's Feed</a>
+         <!-- <a href='resources.html'>Resources</a> -->
+         <!-- <a href='art-gallery.html'>Art Gallery</a> -->
+         <!-- <a href='about.html'>About N.Pryjmak</a> -->
+         <a href='contacts.html'>Contacts</a>
+         <!-- <a href='books.html'>Books</a><br> -->
+         <!-- <a href='references.html'>References</a><br> -->
+      </nav>
+   </div>
+</aside>
+
+<div class="roll-paper">
+   <div class="container-wrap">
+      <div class='container inline-block-100'>
+
+         <main>
+
+            <section>
+               <article class='post inline-block-100'>
+
+                  
+               </article>
+            </section>
+         </main>
+
+         <footer class='footer'>
+            <small>&copy; 2022 Nazar Pryjmak<br> All Rights Reserved<br></small>
+         </footer>
+
+      </div>
+   </div>
+</div>
+
+
+<!-- <a href='#top'>To the top of the page</a> -->
+
+
+<script>
+   EventTarget.prototype.on = EventTarget.prototype.addEventListener;
+
+   desctopMedia = window.matchMedia( '(min-width: 769px)' ); // minWidth769
+
+   // if (desctopMedia.matches) {
+   //    document.getElementById('aside').style.minHeight = document.body.offsetHeight + 'px';
+   // }
+</script>
+<script src='/assets/js/mobile.js'></script>
+<script src='/assets/js/desktop.js'></script>
+
+</body>
+</html>
